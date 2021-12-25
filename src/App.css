@@ -1,38 +1,178 @@
-.App {
+.header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  font-size: 16px;
+  padding-left: 40px;
+  border-bottom: 1px solid #f5b9d7;
+}
+
+.header-item,
+.add-course-text {
+  text-decoration: none;
+  margin-left: 40px;
+  color: #f1356d;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-course-text {
+  display: inline-block;
+  margin: 32px 80px;
+}
+
+.about {
+  color: #333;
+  font-size: 24px;
+  padding-left: 24px;
+}
+
+.footer {
+  height: 80px;
+  background-color: #f5b9d7;
+}
+
+.footer-text {
+  font-size: 16px;
+  margin: auto;
+  text-align: center;
+  line-height: 80px;
+}
+
+/* blog previews / list */
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+.course-preview {
+  display: block;
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+  width: 40%;
+  background-color: #f5b9d7;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.course-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.course-preview h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.course-preview p {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.course-link {
+  text-decoration: none;
+}
+
+.course-detail {
+  background-color: #f5b9d7;
+  padding: 16px 80px;
+}
+
+.blog-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+
+.blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* add-course new blog form */
+.add-course,
+.edit-course {
+  max-width: 400px;
+  margin: 0 auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-course label,
+.edit-course label {
+  text-align: left;
+  display: block;
+}
+.add-course h2,
+.edit-course h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.add-course input,
+.edit-course input,
+.add-course textarea,
+.edit-course textarea,
+.add-course select,
+.edit-course select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.add-course button,
+.edit-course button {
+  background: #f1356d;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input,
+textarea {
+  outline: none;
+  border-radius: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn {
   color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-delete {
+  background-color: #e31c1c;
+  padding: 8px 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-edit {
+  background-color: #095ece;
+  padding: 8px 22px;
+}
+
+.edit-course-link {
+  text-decoration: none;
+  color: white;
+  background-color: #1727ef;
+  padding: 6px 22px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  top: 1px;
 }
